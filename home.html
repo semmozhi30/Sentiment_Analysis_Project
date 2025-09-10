@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expression Sentiment App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('upload') }}">Upload</a>  <!-- ✅ FIXED: matches function name -->
+  </nav>
+  <div class="container">
+    <h1>Expression-Based Sentiment Prediction</h1>
+    <p>Upload a face image to detect the emotion using machine learning!</p>
+    <a href="{{ url_for('upload') }}"><button>Start Now</button></a>
+  </div>
+</body>
+</html>
